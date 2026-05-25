@@ -4,7 +4,7 @@ Este repositorio contiene un proyecto desarrollado en **Android Studio** como pa
 
 ## 🚀 Tecnologías y Herramientas utilizadas
 * **IDE:** Android Studio (Ecosistema de desarrollo oficial).
-* **Lenguaje:** Java / Kotlin *(Nota: Dejá el lenguaje que hayas usado en tu lógica)*.
+* **Lenguaje:** Java 
 * **UI Layouts:** XML (Uso de contenedores como `ConstraintLayout` y `LinearLayout` para garantizar vistas adaptables).
 * **SDK:** Android SDK Tools.
 * **Control de Versiones:** Git y GitHub.
