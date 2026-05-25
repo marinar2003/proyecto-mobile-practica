@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#480B8DCA"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="24dp"
+            android:text="Suscripción Streaming"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#B40881F8"
+            android:padding="5dp"
+            android:text="Seleccione un plan"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#9A1265B3">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:bufferType="normal"
+                android:text="Básico - $ 500/mes"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estándar - $ 1000/mes"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Premium - $ 1800/mes"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#9A1265B3">
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar Calidad HD (+ $ 300/mes)"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#B40881F8"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Forma de pago"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <Spinner
+                android:id="@+id/sp1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="15dp" />
+
+            <Switch
+                android:id="@+id/sw1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Pesos/Dolares"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calcular" />
+
+            <ImageButton
+                android:id="@+id/ibtn2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/actualizar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
